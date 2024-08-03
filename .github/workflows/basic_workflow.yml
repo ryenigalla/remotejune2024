@@ -3,6 +3,9 @@ run-name: Testing our Github actions
 
 on: [push]
 
+env:
+  owner_name: ryenigalla
+
 jobs:
   basic_workflow:
     runs-on: ubuntu-latest
