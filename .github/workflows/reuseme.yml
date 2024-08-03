@@ -1,5 +1,3 @@
-new workflow: reuseme.yml
-
 name: Reusable workflow
 
 on: 
@@ -9,5 +7,5 @@ jobs:
   reusejob1:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: echo "MY REUSABLE JOB 1 - EXECUTED"
-
